@@ -1,3 +1,5 @@
+import sys
+
 class Node:
     def __init__(self, value=None):
         self.left_child = None
@@ -154,6 +156,24 @@ class BinarySearchTree:
             # copied into the other node
             self.delete_node(successor)
 
+    # We have binary tree & binary search trees (left nodes having lesser values & right nodes having greater values)
+    # Run through of test-case at bottom of page:
+    # {5}, min, max
+    # left children (value must be lesser than maximum)
+    # {2}, min, 5
+    # right children (value must be greater than min.)
+    # {10}, 2, max
+    # {15}, 10, max
+    def validate_bst(self, root, min=-sys.maxsize, max=sys.maxsize):
+        if root is None:
+            return True
+        if min < root.value < max and \
+                self.validate_bst(root.left_child, min, root.value) and \
+                self.validate_bst(root.right_child, root.value, max):
+            return True
+        else:
+            return False
+
 
 def fill_tree(_tree, num_elems=100, max_int=1000):
     from random import randint
@@ -161,3 +181,27 @@ def fill_tree(_tree, num_elems=100, max_int=1000):
         cur_elem = randint(0, max_int)
         _tree.insert(cur_elem)
     return _tree
+
+
+tree = BinarySearchTree()
+# tree = fill_tree(tree)
+
+tree.insert(5)
+tree.insert(10)
+tree.insert(2)
+tree.print_tree()
+print(tree.search(5))
+
+
+# Test case for validate_bst
+root = Node(5)
+l = Node(2)
+r = Node(10)
+rr = Node(15)
+
+r.right_child = rr
+# r.left_child = rr  # makes a binary tree
+root.left_child = l
+root.right_child = r
+
+print(tree.validate_bst(root))
