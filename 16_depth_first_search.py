@@ -3,7 +3,7 @@
 # Way of implementing: Recursion or Stacks
 
 # Reference to Binary Search Tree (print_tree)
-# This is breadth-first search (recursion)
+# This is depth-first search (recursion)
 def _print_tree(self, cur_node):
     if cur_node is not None:
         self._print_tree(cur_node.left_child)
