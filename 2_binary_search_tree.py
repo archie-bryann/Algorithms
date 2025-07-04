@@ -205,3 +205,9 @@ root.left_child = l
 root.right_child = r
 
 print(tree.validate_bst(root))
+
+# https://www.youtube.com/watch?v=f5dU3xoE6ms&pp=ygU1YmluYXJ5IHNlYXJjaCB0cmVlIChic3QpIHZhbGlkYXRlIHRyZWUgYnJpYW4gZmF1cnNrb3Y%3D
+#
+# https://www.youtube.com/watch?v=azupT01iC78&pp=ygU1YmluYXJ5IHNlYXJjaCB0cmVlIChic3QpIHZhbGlkYXRlIHRyZWUgYnJpYW4gZmF1cnNrb3Y%3D
+#
+# https://www.youtube.com/watch?v=Zaf8EOVa72I&pp=ygU1YmluYXJ5IHNlYXJjaCB0cmVlIChic3QpIHZhbGlkYXRlIHRyZWUgYnJpYW4gZmF1cnNrb3Y%3D

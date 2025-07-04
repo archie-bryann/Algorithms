@@ -59,3 +59,4 @@ class LinkedList:
                 return
             cur_idx += 1
 
+# https://www.youtube.com/watch?v=JlMyYuY1aXU
