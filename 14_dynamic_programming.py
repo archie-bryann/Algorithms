@@ -41,4 +41,4 @@ if __name__ == "__main__":
     print(fib2_memo(100))
     print(fib3(1000))
 
-# https://www.youtube.com/results?search_query=dynamic+programming
+# https://www.youtube.com/watch?v=vYquumk4nWw
