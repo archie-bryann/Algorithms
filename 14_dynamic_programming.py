@@ -2,7 +2,7 @@
 # Steps one can take to solve a problem with dynamic programming: Recursion, Store (Memoize), Bottom-up
 
 # Recursion
-def fib1(n): # Exponential run time
+def fib1(n): # Exponential run time O(2^n)
     if n == 1 or n == 2:
         result = 1
     else:
@@ -10,7 +10,7 @@ def fib1(n): # Exponential run time
     return result
 
 # Memoized Solution (concept)
-def fib2(n, memo): # T(2n + 1) O(1)
+def fib2(n, memo): # T(2n + 1) * O(1) = O(n)
     if memo[n] is not None:
         return memo[n]
     if n == 1 or n == 2:
