@@ -24,6 +24,7 @@ _heapify_max(data) # max-heap
 print(data)
 
 print(_heappop_max(data)) # pop first elm from max-heap
+print(data)
 
 l1 = [10, 20, 30, 40, 50]
 l2 = [15, 25, 35, 45, 55]

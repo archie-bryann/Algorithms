@@ -1,3 +1,6 @@
+# the shortest path problem
+# breadth-first search is used to solve the shortest path problem.
+
 from collections import deque
 
 graph = {}

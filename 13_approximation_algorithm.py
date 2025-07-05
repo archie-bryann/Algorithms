@@ -1,3 +1,4 @@
+# A greedy algorithm is simple: at each step, pick the optimal move 
 # Approximation algorithm is a greedy algorithm
 
 # Suppose you’re starting a radio show. You want to

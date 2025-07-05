@@ -18,6 +18,6 @@ def _print_tree(self, cur_node):
 
 def _print_tree(self, cur_node):
     if cur_node is not None:
-        print(str(cur_node.value))
         self._print_tree(cur_node.left_child)
-        self._print_tree(cur_node.right_child) # post-order traversal
+        self._print_tree(cur_node.right_child)
+        print(str(cur_node.value)) # post-order traversal
