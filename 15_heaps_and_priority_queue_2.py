@@ -43,11 +43,18 @@ print(A[0])
 
 # Max Heap
 B = [-4, 3, 1, 0, 2, 5, 10, 8, 12, 9]
-heapq._heapify_max(B)
+n = len(B)
+
+# for i in range(n):
+#     B[i] = -B[i]
+
+B = [-n for n in B]
+
+heapq.heapify(B)
 print(B)
 
 # Insert 7 into the max heap
-heapq.heappush(B, 7)
+heapq.heappush(B, -7)
 print(B)
 
 # Build heap from scratch - Time O(n log n)
@@ -69,3 +76,4 @@ for k, v in counter.items():
     heapq.heappush(heap, (v, k)) # sort itself by v, then use k as a tie-breaker
 
 print(heap)
+

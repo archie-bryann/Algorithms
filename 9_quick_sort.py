@@ -10,3 +10,4 @@ def qsort(arr):
     return qsort(lesser) + [pivot] + qsort(greater)
 
 print(qsort([3,5,2,1,4]))
+print(qsort([3,2,3,1,2,4,5,5,6]))
