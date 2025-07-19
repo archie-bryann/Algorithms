@@ -32,6 +32,13 @@ l2 = [15, 25, 35, 45, 55]
 l3 = merge(l1, l2)
 print(list(l3))
 
+
+data2 = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55]
+heapify(data2)
+print(data2)
+_heapify_max(data2)
+print(data2)
+
 # https://www.youtube.com/watch?v=wGSQ486Y4sc
 
 

@@ -23,6 +23,7 @@ def _print_tree(self, cur_node):
 
 # post-order traversal
 # clean-up or solve bottom-up problems like height or diameter.
+# invert or reflect
 def _print_tree(self, cur_node):
     if cur_node is not None:
         self._print_tree(cur_node.left_child)
