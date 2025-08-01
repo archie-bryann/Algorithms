@@ -76,5 +76,3 @@ for k, v in counter.items():
     heapq.heappush(heap, (v, k)) # sort itself by v, then use k as a tie-breaker
 
 print(heap)
-
-print("hello world")
